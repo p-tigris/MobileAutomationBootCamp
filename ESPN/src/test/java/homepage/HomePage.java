@@ -25,5 +25,10 @@ public class HomePage extends MobileAPI {
         homePagePOM.signUp();
     }
 
+    @Test
+    public void verifyHomePage() {
+        homePagePOM.validateESPN();
+    }
+
 
 }
