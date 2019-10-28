@@ -20,5 +20,10 @@ public class HomePage extends MobileAPI {
         homePagePOM.allowAccessFiles();
     }
 
+    @Test
+    public void clickSignUp() {
+        homePagePOM.signUp();
+    }
+
 
 }
