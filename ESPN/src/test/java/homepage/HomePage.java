@@ -21,6 +21,11 @@ public class HomePage extends MobileAPI {
     }
 
     @Test
+    public void denyAccessLocation() {
+        homePagePOM.denyAccessLocation();
+    }
+
+    @Test
     public void clickSignUp() {
         homePagePOM.signUp();
     }

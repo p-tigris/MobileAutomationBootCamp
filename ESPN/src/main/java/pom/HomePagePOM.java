@@ -10,14 +10,22 @@ public class HomePagePOM {
     @FindBy(xpath = "//android.widget.Button[@text='ALLOW']")
     WebElement allowAccess;
 
+    @FindBy(xpath = "//android.widget.Button[@text='DENY']")
+    WebElement denyAccess;
+
     @FindBy(xpath = "//android.widget.Button[@text='SIGN UP']")
     WebElement signUpButton;
 
     @FindBy(xpath = "//android.widget.ImageView[@content-desc='App Logo']")
     WebElement espnLogo;
 
+
     public void allowAccessFiles() {
         allowAccess.click();
+    }
+
+    public void denyAccessLocation() {
+        denyAccess.click();
     }
 
     public void signUp() {
